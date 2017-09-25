@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/root_linearLayout"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/n_tvtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:layout_gravity="center_horizontal">
+
+        <View
+            android:id="@+id/remind_circle"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circular_reminder_points"
+            android:visibility="gone" />
+        <!--  android:layout_above="@+id/divider"
+                android:layout_alignBottom="@id/root_linearLayout"-->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:background="#d9d9d9" />
+    </RelativeLayout>
+</LinearLayout>
